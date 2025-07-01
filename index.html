@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <div>
@@ -12,24 +13,28 @@
             <h1 id="score">000</h1>
             <h1 id="highScore">000</h1>
         </div>
+
         <div class="game-border-1">
             <div class="game-border-2">
-              <div class="game-border-3">
-                 <div id="game-board"></div>
-              </div>
+                <div class="game-border-3">
+                    <div id="game-board">
+                       <img id='logo' src="snake.PNG" alt="">
+                        <h1 id="instruction">Press button to start the game</h1>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <h1 id="instruction">Press spacebar to start the game </h1>
-    <img id="logo" src="snake.PNG" alt="snake">
 
-    <div class="snake-deco1">
-        <img src="outerSnake.png" alt="Decorative Snake">
-    </div>
-    <div class="snake-deco2">
-        <img src="outSnake.png" alt="Decorative Snake">
+        <button id="startBtn">Start Game </button>
+
+        <div class="snake-deco1">
+            <img src="outerSnake.png" alt="Decorative Snake" onerror="this.style.display='none'">
+        </div>
+        <div class="snake-deco2">
+            <img src="outSnake.png" alt="Decorative Snake" onerror="this.style.display='none'">
+        </div>
     </div>
 
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
